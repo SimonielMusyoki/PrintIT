@@ -1,0 +1,22 @@
+{% extends 'printers/base.html' %}
+{% load static %}
+{% block content %}
+    <h1>PrintIT Services</h1>
+    <div>
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <h2><a class="mr-2" href="" disabled=disabled>Services offered by PrintIT</a></h2>
+                </div>
+                <ul>
+                    <li><p class="article-content"> Online Printing of Media e.g. Documents, Images & Designs</p></li>
+                    <li><p class="article-content">Connecting Customers and Printing Services</p></li>
+                    <li><p class="article-content">Self registration of People and Services</p></li>
+                    <li><p class="article-content">Faster and Secure Payment Strategies for Users</p></li>
+                </ul>
+                
+                <p class="article-content">For more Information <a href="{% url 'contact' %}">Contact us</a></p>
+            </div>
+        </article>
+    </div>
+{% endblock content %}
